@@ -1,0 +1,5 @@
+recursive-include onnx *.h *.cc *.proto
+recursive-include third_party *
+include LICENSE
+recursive-include onnx/backend/test/data *
+include VERSION_NUMBER
