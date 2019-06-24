@@ -76,7 +76,7 @@ void CustomVideoDecoder::decodeLoop(
     int ret = 0;
 
     // Determining the input format:
-    int probeSz = 32 * 1024 + AVPROBE_PADDING_SIZE;
+    int probeSz = 1 * 1024 + AVPROBE_PADDING_SIZE;
     DecodedFrame::AvDataPtr probe((uint8_t*)av_malloc(probeSz));
 
     memset(probe.get(), 0, probeSz);
